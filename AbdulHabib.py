@@ -1,5 +1,3 @@
-import signal
-signal.signal = lambda sig, handler: None
 
 import flet as ft
 
