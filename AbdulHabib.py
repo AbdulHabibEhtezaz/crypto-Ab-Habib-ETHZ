@@ -1,3 +1,6 @@
+import signal
+signal.signal = lambda sig, handler: None
+
 import flet as ft
 
 def main(page: ft.Page):
@@ -180,4 +183,4 @@ def main(page: ft.Page):
 
     page.add(main_stack)
 
-ft.app(target=main)
+ft.app(target=main, view=ft.AppView.WEB_BROWSER)
